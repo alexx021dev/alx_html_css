@@ -1,0 +1,434 @@
+/* =======================================
+   Fonts
+======================================= */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* =======================================
+   Reset & Base
+======================================= */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #FFFFFF;
+    --color-dark-blue: #071629;
+    --color-accent: #FF6565;
+    --color-black: #000000;
+    --color-light-gray: #D8D8D8;
+    --color-gray: #979797;
+}
+
+html {
+    font-size: 16px; /* base mobile size */
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #fff;
+    font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
+.page {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* =======================================
+   Header & Navigation
+======================================= */
+header {
+    background-image: url(images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+    overflow: hidden;
+}
+
+.nav-list {
+    display: none;
+}
+
+.logo-img {
+    width: 200px;
+    margin: 2rem auto;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+
+/* ---------------------------------------
+   Toggle Menu
+--------------------------------------- */
+#menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    left: 0.5rem;
+    z-index: 10;
+}
+
+.menu-btn span {
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-white);
+    margin: 4px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-btn span:nth-of-type(2) {
+    width: 20px;
+}
+
+#menu-toggle:checked ~ .menu-btn span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 10px);
+}
+
+#menu-toggle:checked ~ .menu-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked ~ .menu-btn span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -10px);
+}
+
+#menu-toggle:checked ~ .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: black;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.nav-list a:hover {
+    color: var(--color-accent);
+}
+
+
+/* =======================================
+   Hero Section
+======================================= */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.5;
+    max-width: 90%;
+    text-align: center;
+}
+
+.call-button {
+    display: inline-block;
+    background-color: var(--color-accent);
+    padding: 0.7rem 1.5rem;
+    border-radius: 1.6rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--color-white);
+}
+.call-button:hover {
+    background-color: var(--color-white);
+    color: var(--color-dark-blue);
+    opacity: 0.9;
+}
+
+/* =======================================
+   Feature Section
+======================================= */
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.feature-grid {
+    display: grid;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.feature-icon {
+    max-width: 25%;
+}
+
+.container-2 p {
+    text-align: center;
+    max-width: 90%;
+}
+
+
+/* =======================================
+   Statistics Section
+======================================= */
+.stats {
+    background-image: url(images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    color: var(--color-white);
+    padding: 2rem;
+}
+
+.stat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.stat-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.stat-description {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    line-height: 1.7rem;
+}
+
+.stat-item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.pentagon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.stat-content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--color-white);
+    font-family: sans-serif;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+}
+
+.stat-text {
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+
+/* =======================================
+   Contact Section
+======================================= */
+.contact h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact-form label {
+    margin-bottom: 2px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: none;
+    border-bottom: 2px solid var(--color-light-gray);
+    font-size: 1rem;
+    outline: none;
+    padding: 2px 0;
+    margin-bottom: 2rem;
+}
+
+.contact-form button {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    padding: 0.7rem 1.5rem;
+    border-radius: 1.6rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* =======================================
+   Footer
+======================================= */
+.footer {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-content img {
+    width: 150px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-gray);
+    transition: background-color 0.3s ease;
+}
+
+.social-icons:hover {
+    background-color: var(--color-white);
+}
+
+
+/* =======================================
+   Media Queries
+======================================= */
+@media (min-width: 480px) {
+    header { 
+        min-height: 50vh;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .container-1 {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .logo-img {
+        width: 200px;
+        margin: 2rem 0;
+    }
+
+    /* What we do section */
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Stat section */
+    .stat-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between; 
+    }
+
+    .stat-item {
+        margin: auto auto;
+    }
+
+    .contact .container-2 {
+        width: 40%;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto 4rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    header {
+        min-height: 30vh;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .stat-container {
+        grid-template-columns: repeat(4, 1fr);  
+    }
+}

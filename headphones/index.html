@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- =======================================
+       Meta & Title
+  ======================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Hero</title>
+
+  <!-- =======================================
+       Stylesheets & Fonts
+  ======================================== -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+       <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- =======================================
+         Header Section
+    ======================================== -->
+    <header class="header">
+      <div class="container-1">
+        <img src="images/logo_headphones.png"
+             alt="Music Hero Logo"
+             class="logo-img">
+
+        <input type="checkbox" id="menu-toggle" />
+
+        <nav class="nav-list" aria-label="Main Navigation">
+          <a href="#">What We Do</a>
+          <a href="#">Our Results</a>
+          <a href="#">Contact Us</a>
+        </nav>
+
+        <label for="menu-toggle"
+               class="menu-btn"
+               aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="hero">
+        <h1>Lorem ipsum dolor sit amet lorem ipsum</h1>
+        <p>Short hero subheading here</p>
+
+        <button class="call-button">Start Listening</button>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur.
+        </p>
+      </div>
+    </header>
+
+    <!-- =======================================
+         Main Content
+    ======================================== -->
+    <main>
+
+      <!-- Features Section -->
+      <section class="features">
+        <div class="container-2">
+          <h2>What we do...</h2>
+          <p class="section-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur.
+          </p>
+
+          <div class="feature-grid">
+            <div class="feature-item">
+              <img src="images/sound_frequency.png"
+                   alt="sound frequency icon"
+                   class="feature-icon" />
+              <h3>High Quality</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="feature-item">
+              <img src="images/video.png"
+                   alt="video cut icon"
+                   class="feature-icon" />
+              <h3>Offline Mode</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="feature-item">
+              <img src="images/music.png"
+                   alt="Music note icon"
+                   class="feature-icon" />
+              <h3>Playlists</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="feature-item">
+              <img src="images/hearing.png"
+                   alt="hearning icon"
+                   class="feature-icon" />
+              <h3>Smart Recommendations</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Statistics Section -->
+      <section class="stats">
+        <h2 class="stat-title">Our results speak for themselves</h2>
+        <p class="stat-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur.
+        </p>
+
+        <div class="stat-container">
+          <div class="stat-item">
+            <img src="images/pentagone.png"
+                 alt="Pentagon shape with statistic"
+                 class="pentagon-img">
+            <div class="stat-content">
+              <span class="stat-number">+2%</span>
+              <p class="stat-text">Lorem ipsum dolor</p>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <img src="images/pentagone.png"
+                 alt="Pentagon shape with statistic"
+                 class="pentagon-img">
+            <div class="stat-content">
+              <span class="stat-number">+2%</span>
+              <p class="stat-text">Lorem ipsum dolor</p>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <img src="images/pentagone.png"
+                 alt="Pentagon shape with statistic"
+                 class="pentagon-img">
+            <div class="stat-content">
+              <span class="stat-number">+2%</span>
+              <p class="stat-text">Lorem ipsum dolor</p>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <img src="images/pentagone.png"
+                 alt="Pentagon shape with statistic"
+                 class="pentagon-img">
+            <div class="stat-content">
+              <span class="stat-number">+2%</span>
+              <p class="stat-text">Lorem ipsum dolor</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact">
+        <h2>Contact Us</h2>
+        <div class="container-2">
+          <form action="#"
+                method="post"
+                class="contact-form">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+
+            <label for="message">Your Message</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- =======================================
+         Footer
+    ======================================== -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <img src="images/logo_headphones.png"
+             alt="Music Hero Logo">
+
+        <div class="socials">
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <p>&copy; Headphone 2020.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
